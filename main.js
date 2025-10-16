@@ -99,3 +99,56 @@ dots.forEach((dot, index) => {
 // setInterval(() => {
 //   showSlide(currentSlide + 1);
 // }, 5000);
+
+// Client Slider Functionality
+const clientSlides = document.querySelectorAll(".client-slide");
+const clientPrevBtn = document.querySelector(".client-prev-btn");
+const clientNextBtn = document.querySelector(".client-next-btn");
+const clientDots = document.querySelectorAll(".client-dot");
+
+let currentClientSlide = 0;
+
+function showClientSlide(n) {
+  // Remove active class from all slides and dots
+  clientSlides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  clientDots.forEach((dot) => {
+    dot.classList.remove("active");
+  });
+
+  // Handle wrap around
+  if (n >= clientSlides.length) {
+    currentClientSlide = 0;
+  } else if (n < 0) {
+    currentClientSlide = clientSlides.length - 1;
+  } else {
+    currentClientSlide = n;
+  }
+
+  // Add active class to current slide and dot
+  clientSlides[currentClientSlide].classList.add("active");
+  clientDots[currentClientSlide].classList.add("active");
+}
+
+// Next button
+clientNextBtn.addEventListener("click", () => {
+  showClientSlide(currentClientSlide + 1);
+});
+
+// Previous button
+clientPrevBtn.addEventListener("click", () => {
+  showClientSlide(currentClientSlide - 1);
+});
+
+// Dot navigation
+clientDots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    showClientSlide(index);
+  });
+});
+
+// Auto slide for client testimonials (optional - uncomment to enable)
+// setInterval(() => {
+//   showClientSlide(currentClientSlide + 1);
+// }, 6000);
