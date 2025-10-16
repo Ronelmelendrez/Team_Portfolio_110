@@ -131,6 +131,10 @@ header.sticky .nav-bar {
   color: var(--hover-color);
 }
 
+.home-container .info {
+  width: 100%;
+}
+
 .home-container .info h2 {
   font-size: 4em;
   font-weight: 600;
@@ -586,4 +590,107 @@ header.sticky .nav-bar {
   cursor: pointer;
   max-width: 100%;
   height: 360px;
+}
+.portfolio-list .img-card .overlay {
+  transition: 1s ease;
+}
+
+.portfolio-list .img-card:hover .overlay {
+  z-index: 777;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-list .img-card .info {
+  z-index: 777;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  color: #fff;
+  transform: translateY(20px);
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.portfolio-list .img-card:hover .info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.portfolio-list .img-card .info h3 {
+  font-size: 1.5em;
+}
+
+.portfolio-list .img-card .info span {
+  font-size: 1.2rem;
+}
+
+.portfolio-list .img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-model {
+  z-index: 99999;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: var(--transparent-color-01);
+  backdrop-filter: blur(20px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.portfolio-model.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.portfolio-model-body {
+  position: relative;
+  max-width: 600px;
+  background: var(--modal-bg-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 40px;
+  transform: translateY(-50);
+  transition: 0.5s ease;
+}
+
+.portfolio-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.portfolio-model.active .portfolio-model-body {
+  transform: translateY(0);
+}
+
+.portfolio-model-body .modal-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.portfolio-model-body h3 {
+  font-size: 1.5em;
+}
+
+.portfolio-model-body img {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 10px;
 }
