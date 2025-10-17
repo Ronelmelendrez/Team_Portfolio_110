@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Portfolio - Random Quote Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🎯 Team Portfolio</h1>
+        <p>Midterm Project - Web Technologies</p>
+      </header>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h2 class="project-title">Random Quote Generator</h2>
+          <a
+            href="https://api.quotable.io/random"
+            class="api-link"
+            target="_blank"
+          >
+            🔗 View API Documentation
+          </a>
+        </div>
+
+        <p class="project-description">
+          An interactive web application that fetches and displays random
+          inspirational quotes using the Quotable API. This project demonstrates
+          our proficiency in HTML, CSS, and JavaScript, particularly in working
+          with external APIs, asynchronous operations, and creating engaging
+          user interfaces.
+        </p>
+
+        <div class="demo-section">
+          <h3>📱 Live Demo</h3>
+          <div class="quote-display">
+            <div class="quote-text" id="quoteText">
+              Click the button below to get an inspiring quote!
+            </div>
+            <div class="quote-author" id="quoteAuthor"></div>
+          </div>
+          <button class="btn" onclick="getNewQuote()">✨ Get New Quote</button>
+        </div>
+
+        <h3 style="margin-bottom: 20px; color: #333">🚀 Key Features</h3>
+        <div class="features">
+          <div class="feature-card">
+            <h4>API Integration</h4>
+            <p>Fetches data from Quotable API using modern fetch() method</p>
+          </div>
+          <div class="feature-card">
+            <h4>Responsive Design</h4>
+            <p>Works seamlessly on desktop, tablet, and mobile devices</p>
+          </div>
+          <div class="feature-card">
+            <h4>Error Handling</h4>
+            <p>Gracefully handles network errors and API failures</p>
+          </div>
+          <div class="feature-card">
+            <h4>Modern UI</h4>
+            <p>Beautiful gradient design with smooth animations</p>
+          </div>
+        </div>
+
+        <div
+          style="
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+          "
+        >
+          <strong>📚 Technologies Used:</strong> HTML5, CSS3, JavaScript (ES6+),
+          Fetch API, REST API Integration
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
