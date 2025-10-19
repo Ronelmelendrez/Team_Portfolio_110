@@ -182,6 +182,10 @@ header.sticky .nav-bar {
   margin-top: 20px;
 }
 
+.home-img img {
+  width: 550px;
+}
+
 .home .scroll-down i {
   color: var(--second-color);
   font-size: 1.2rem;
