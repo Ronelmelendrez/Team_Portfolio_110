@@ -249,3 +249,259 @@ header p {
   color: #667eea;
   font-style: italic;
 }
+
+/* ======================== RESPONSIVE DESIGN ======================== */
+
+/* Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  header {
+    padding: 30px 15px;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .project-card {
+    padding: 30px 20px;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+  }
+
+  .api-link {
+    padding: 12px 25px;
+    font-size: 0.9em;
+  }
+
+  .project-description {
+    font-size: 1em;
+  }
+
+  .demo-section {
+    padding: 20px;
+  }
+
+  .demo-section h3 {
+    font-size: 1.3em;
+  }
+
+  .quote-display {
+    padding: 20px;
+  }
+
+  .quote-text {
+    font-size: 1.1em;
+  }
+
+  .quote-author {
+    font-size: 1em;
+  }
+
+  .btn {
+    padding: 12px 30px;
+    font-size: 1em;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .feature-card {
+    padding: 15px;
+  }
+
+  .feature-card h4 {
+    font-size: 1.1em;
+  }
+
+  .team-section {
+    padding: 30px 20px;
+  }
+
+  .team-section h2 {
+    font-size: 1.8em;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .member-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5em;
+  }
+
+  .member-name {
+    font-size: 1em;
+  }
+
+  .member-role {
+    font-size: 0.85em;
+  }
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  .project-card {
+    padding: 20px 15px;
+    border-radius: 10px;
+  }
+
+  .project-title {
+    font-size: 1.3em;
+  }
+
+  .api-link {
+    padding: 10px 20px;
+    font-size: 0.85em;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .project-description {
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+
+  .demo-section {
+    padding: 15px;
+  }
+
+  .demo-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+
+  .quote-display {
+    padding: 15px;
+    min-height: 100px;
+  }
+
+  .quote-text {
+    font-size: 1em;
+    margin-bottom: 12px;
+  }
+
+  .quote-author {
+    font-size: 0.9em;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 0.95em;
+    width: 100%;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .feature-card {
+    padding: 15px;
+  }
+
+  .feature-card h4 {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+
+  .feature-card p {
+    font-size: 0.9em;
+  }
+
+  .team-section {
+    padding: 20px 15px;
+    border-radius: 10px;
+  }
+
+  .team-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .team-member {
+    padding: 15px;
+  }
+
+  .member-avatar {
+    width: 70px;
+    height: 70px;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+
+  .member-name {
+    font-size: 0.95em;
+  }
+
+  .member-role {
+    font-size: 0.8em;
+  }
+}
+
+/* Small Mobile Devices (max-width: 360px) */
+@media screen and (max-width: 360px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .project-title {
+    font-size: 1.2em;
+  }
+
+  .quote-text {
+    font-size: 0.95em;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .member-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2em;
+  }
+}
