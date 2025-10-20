@@ -152,3 +152,34 @@ clientDots.forEach((dot, index) => {
 // setInterval(() => {
 //   showClientSlide(currentClientSlide + 1);
 // }, 6000);
+
+// Name Carousel Functionality
+const names = [
+  "Ronel Melendrez",
+  "Jon Carlo Albarida",
+  "Jon Kevin Cale",
+  "Jachin Hilarion",
+];
+const nameCarousel = document.querySelector(".name-carousel");
+let currentNameIndex = 0;
+
+function updateName() {
+  // Add fade-out effect
+  nameCarousel.style.opacity = "0";
+
+  setTimeout(() => {
+    // Change the name
+    currentNameIndex = (currentNameIndex + 1) % names.length;
+    nameCarousel.textContent = names[currentNameIndex];
+
+    // Add fade-in effect
+    nameCarousel.style.opacity = "1";
+  }, 500); // Wait for fade-out to complete
+}
+
+// Initialize with first name
+nameCarousel.textContent = names[0];
+nameCarousel.style.opacity = "1";
+
+// Change name every 3 seconds
+setInterval(updateName, 3000);

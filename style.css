@@ -141,6 +141,14 @@ header.sticky .nav-bar {
   line-height: 70px;
 }
 
+.name-carousel {
+  color: var(--second-color);
+  display: inline-block;
+  min-width: 250px;
+  text-align: left;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .home-container .info h3 {
   color: var(--third-color);
   font-feature-settings: 1.3em;
@@ -1459,6 +1467,11 @@ footer {
     line-height: 40px;
   }
 
+  .name-carousel {
+    min-width: 150px;
+    font-size: 0.95em;
+  }
+
   .home-container .info h3 {
     font-size: 1em;
     line-height: 35px;
@@ -1640,6 +1653,11 @@ footer {
   .home-container .info h2 {
     font-size: 1.8em;
     line-height: 35px;
+  }
+
+  .name-carousel {
+    min-width: 120px;
+    font-size: 0.9em;
   }
 
   .section-title-01 {
