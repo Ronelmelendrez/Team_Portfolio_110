@@ -230,7 +230,8 @@ header.sticky .nav-bar {
 }
 
 @keyframes arrow-down {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -301,7 +302,8 @@ header.sticky .nav-bar {
 }
 
 @keyframes floating-slow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -917,7 +919,8 @@ header.sticky .nav-bar {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
